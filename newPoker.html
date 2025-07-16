@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poker Texas Hold'em</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</head>
+
+<body>
+    <h1>Poker Texas Hold'em</h1>
+    <div>
+        <h2>Your Hand</h2>
+        <div class="card-container" id="player-hand"></div>
+    </div>
+    <div>
+        <h2>AI Hand</h2>
+        <div class="card-container" id="ai-hand"></div>
+    </div>
+    <div>
+        <h2>Community Cards</h2>
+        <div class="card-container" id="community-cards"></div>
+    </div>
+    <p id="win-rate">Win Rate: 0%</p>
+    <p id="best-hand"></p>
+    <p id="result"></p>
+    <div class="button-container">
+        <button id="deal-button" onclick="dealCards()">Next Phase</button>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
